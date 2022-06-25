@@ -1,0 +1,19 @@
+.home {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0 32px;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .text {
+        color: $color-red;
+    }
+}
