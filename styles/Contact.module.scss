@@ -1,0 +1,55 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 32px 0;
+
+        label {
+            align-self: flex-start;
+            font-size: .75rem;
+            margin-bottom: 16px;
+        }
+
+        input, textarea {
+            width: 100%;
+            background-color: white;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
+            border: 1px solid $color-sand;
+            border: none;
+            border-radius: 8px;
+            box-shadow: -8px 8px 8px rgba(black, .3);
+        }
+        
+        input {
+            margin-bottom: 32px;
+        }
+
+        button {
+            width: 100%;
+            background-color: $color-red;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 32px;
+            padding: 16px;
+            border: none;
+            border-radius: 100px;
+            box-shadow: -8px 8px 8px rgba(black, .3);
+            transition: all .3s;
+            
+            &:active {
+                transform: translateY(4px);
+                box-shadow: -4px 4px 4px rgba(black, .3);
+            }
+        }
+    }
+}
