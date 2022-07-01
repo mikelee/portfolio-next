@@ -15,7 +15,7 @@ const Contact = () => (
                 <label htmlFor='name'>Name</label>
                 <input type='text' name='name' placeholder='Your name' required autoFocus />
                 <label htmlFor='email'>Email</label>
-                <input type='email' name='email' placeholder='username@example.com' required autoFocus />
+                <input type='email' name='email' placeholder='username@example.com' required />
                 <label htmlFor='message'>Message</label>
                 <textarea name='message' rows={12} placeholder="What's on your mind..." required />
                 <button type='submit'>Submit</button>
