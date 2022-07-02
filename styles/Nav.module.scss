@@ -43,3 +43,31 @@
         }
     }
 }
+
+@media screen and (min-width: 721px) {
+    .nav {
+        height: fit-content;
+    
+        .close-button {
+            display: none;
+        }
+    
+        &-list {
+            flex-direction: row;
+            justify-content: flex-end;
+
+            & li {
+                margin: 0 16px;
+            }
+        }
+    
+        &-link {
+            font-size: 1rem;
+            padding: 8px;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
