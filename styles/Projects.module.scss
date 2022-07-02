@@ -18,11 +18,12 @@
 
         .image {
             height: 400px;
-            width: 80%;
+            width: 225px;
             background-size: cover;
             margin: 32px 0;
             border-radius: 8px;
             box-shadow: -16px 16px 16px rgba(black, .3);
+            background-position: center top;
         }
 
         .try-project-button {
