@@ -12,7 +12,7 @@ const projects: Project[] = [
         name: 'Gravity Simulator',
         description: 'Create planets and watch how their gravitational forces influence each other\'s orbits.',
         image: '/gravity-simulator-image.png',
-        url: 'https://dailyachievements.herokuapp.com/'
+        url: 'https://gravitysimulator.herokuapp.com/'
     },
     {
         id: 2,
