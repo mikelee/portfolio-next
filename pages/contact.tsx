@@ -10,7 +10,7 @@ const Contact = () => (
         </Head>
         <main className={styles['contact']}>
             <h1>Contact</h1>
-            <p>Let's get in touch!</p>
+            <p>Let&apos;s get in touch!</p>
             <form action='https://usebasin.com/f/e94fc554851b' method='POST'>
                 <label htmlFor='name'>Name</label>
                 <input type='text' name='name' placeholder='Your name' required autoFocus />
