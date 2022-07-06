@@ -16,7 +16,7 @@ const Projects = () => (
                 projectsData.map(project => (
                     <section key={project.id} className={styles['project']}>
                         <h2 className={styles['name']}>{project.name}</h2>
-                        <div className={styles['image']} style={{backgroundImage: `url(${project.image})`}}></div>
+                        <div className={`${styles['image']} ${styles[`project-${project.id}`]}`} style={{backgroundImage: `url(${project.image})`}}></div>
                         <Link href={project.url}><a className={styles['try-project-button']}>Try it out!</a></Link>
                     </section>
                 ))
