@@ -44,6 +44,14 @@
             background: none;
             border: none;
             cursor: pointer;
+
+            &:active .close-icon--path, &:hover .close-icon--path {
+                fill: $color-red;
+            }
+        
+            .close-icon--path {
+                transition: all .3s;
+            }
         }
     
         &-list {
