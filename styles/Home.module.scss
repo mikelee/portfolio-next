@@ -1,6 +1,10 @@
 .home {
+    height: calc(100vh - 100px);
     width: 100vw;
     padding: 0 32px;
+    background-image: url('/background.svg');
+    background-size: cover;
+    background-position: bottom;
 
     main {
         display: flex;
@@ -39,5 +43,28 @@
                 box-shadow: -4px 4px 4px rgba(black, .3);
             }
         }
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .home {
+
+        .buttons {
+            flex-direction: row;
+            justify-content: center;
+
+            .button {
+                width: 250px;
+                margin: 32px;
+                margin-top: 80px;
+                padding: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .home {
+        background-position: 0% 96%;
     }
 }
