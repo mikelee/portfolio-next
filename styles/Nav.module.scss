@@ -13,12 +13,17 @@
         padding: 8px;
         border: none;
         border-radius: 5px 0 0 5px;
-        box-shadow: -5px 5px 5px rgba(black, .3);
+        box-shadow: -8px 8px 8px rgba(black, .3);
         transition: all .3s;
         
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: -12px 12px 12px rgba(black, .3);
+        }
+
         &:active {
             transform: translateY(4px);
-            box-shadow: -3px 3px 3px rgba(black, .3);
+            box-shadow: -4px 4px 4px rgba(black, .3);
         }
     }
 
