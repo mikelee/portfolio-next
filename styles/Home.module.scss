@@ -3,7 +3,8 @@
     width: 100vw;
     padding: 0 32px;
     background-image: url('/home-background.svg');
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: bottom;
 
     main {
