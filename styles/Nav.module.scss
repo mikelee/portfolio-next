@@ -33,6 +33,10 @@
         width: 100vw;
         padding: 24px;
         background-color: $color-bone;
+        background-image: url('/nav-background.svg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
         overflow: hidden;
     
         .close-button {
@@ -117,6 +121,7 @@
             height: fit-content;
             padding: 0;
             width: 100%;
+            background-image: none;
 
             .close-button {
                 display: none;
@@ -140,5 +145,14 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navigation {
+
+        // .nav {
+        //     background-position: 0% 90%;
+        // }
     }
 }
