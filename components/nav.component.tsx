@@ -12,10 +12,10 @@ interface Props {
 
 const Nav: React.FC<Props> = ({ navVisible, setNavVisible }) => (
     <div className={styles['navigation']}>
-        <button className={`${styles['nav-toggle']} ${navVisible ? `${styles['invisible']}` : ''}`} onClick={() => setNavVisible(true)}>
+        <button className={`${styles['nav-toggle']} ${navVisible ? `${styles['nav-invisible']}` : ''}`} onClick={() => setNavVisible(true)}>
             <MenuIcon size={60} />
         </button>
-        <nav className={`${styles['nav']} ${navVisible ? `${styles['visible']}` : ''}`} data-testid='nav'>
+        <nav className={`${styles['nav']} ${navVisible ? `${styles['nav-visible']}` : ''}`} data-testid='nav'>
             <button className={styles['close-button']} onClick={() => setNavVisible(false)}>
                 <CloseIcon size={30} />
             </button>
