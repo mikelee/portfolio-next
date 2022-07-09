@@ -53,3 +53,26 @@
         }
     }
 }
+
+@media screen and (min-width: 721px) {
+    .contact {
+
+        form {
+            width: 80%;
+
+            button {
+                width: 250px;
+                align-self: flex-start;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact {
+
+        form {
+            width: 60%;
+        }
+    }
+}
