@@ -12,6 +12,12 @@ const PageLayout: React.FC<Props> = ({ children }) => {
     useEffect(() => {
         setNavVisible(false);
     }, [children]);
+    
+    useEffect(() => {
+        navVisible
+        ? document.body.style.overflow = 'hidden'
+        : document.body.style.overflow = 'visible'
+    }, [navVisible]);
 
     return (
         <>
