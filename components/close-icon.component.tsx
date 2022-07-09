@@ -1,4 +1,4 @@
-import styles from '../styles/Nav.module.scss';
+import styles from '../styles/Navigation.module.scss';
 
 interface Props {
     size: number

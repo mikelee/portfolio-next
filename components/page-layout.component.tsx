@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import Nav from './nav.component';
+import Navigation from './navigation.component';
 
 interface Props {
     children: React.ReactNode
@@ -21,7 +21,7 @@ const PageLayout: React.FC<Props> = ({ children }) => {
 
     return (
         <>
-            <Nav navVisible={navVisible} setNavVisible={setNavVisible} />
+            <Navigation navVisible={navVisible} setNavVisible={setNavVisible} />
             {children}
         </>
     );

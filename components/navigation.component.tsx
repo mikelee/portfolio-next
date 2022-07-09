@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from '../styles/Nav.module.scss';
+import styles from '../styles/Navigation.module.scss';
 
 import CloseIcon from './close-icon.component';
 import MenuIcon from './menu-icon.component';
@@ -10,7 +10,7 @@ interface Props {
     setNavVisible: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Nav: React.FC<Props> = ({ navVisible, setNavVisible }) => (
+const Navigation: React.FC<Props> = ({ navVisible, setNavVisible }) => (
     <div className={styles['navigation']}>
         <button className={`${styles['nav-toggle']} ${navVisible ? `${styles['nav-invisible']}` : ''}`} onClick={() => setNavVisible(true)}>
             <MenuIcon size={60} />
@@ -36,4 +36,4 @@ const Nav: React.FC<Props> = ({ navVisible, setNavVisible }) => (
         </nav>
     </div>
 );
-export default Nav;
+export default Navigation;
