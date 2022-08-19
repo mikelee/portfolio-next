@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Link from 'next/link';
 
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => {
     return (
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                 </main>
             </div>
         </>
-    )
+    );
 }
 
-export default Home
+export default Home;
