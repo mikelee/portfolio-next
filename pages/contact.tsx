@@ -29,7 +29,7 @@ const Contact = () => {
                 <h1>Contact</h1>
                 <p>Let&apos;s get in touch!</p>
                 <form ref={formRef} action={'https://usebasin.com/f/e94fc554851b'} method='POST' >
-                    <label htmlFor='name'>Name</label>s
+                    <label htmlFor='name'>Name</label>
                     <input type='text' name='name' placeholder='Your name' required autoFocus />
                     <label htmlFor='email'>Email</label>
                     <input type='email' name='email' placeholder='username@example.com' required />
