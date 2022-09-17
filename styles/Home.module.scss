@@ -53,6 +53,25 @@
         position: absolute;
         bottom: 0;
         left: 0;
+
+        .back,
+        .middle,
+        .front {
+            animation-duration: 1.2s;
+            animation-timing-function: ease-out;
+        }
+        
+        .back {
+            animation-name: slide-in-back;
+        }
+        
+        .middle {
+            animation-name: slide-in-middle;
+        }
+        
+        .front {
+            animation-name: slide-in-front;
+        }
     }
 }
 
@@ -76,5 +95,35 @@
 @media screen and (min-width: 1300px) {
     .home {
         background-position: 0% 96%;
+    }
+}
+
+@keyframes slide-in-back {
+    from {
+        transform: translateX(-2%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-middle {
+    from {
+        transform: translateX(-5%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-front {
+    from {
+        transform: translateX(-15%);
+    }
+
+    to {
+        transform: translateX(0%);
     }
 }
