@@ -1,11 +1,9 @@
 .home {
+    position: relative;
     height: calc(100vh - 100px);
     width: 100vw;
     padding: 0 32px;
-    background-image: url('/home-background.svg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    overflow: hidden !important;
 
     main {
         display: flex;
@@ -73,4 +71,10 @@
     .home {
         background-position: 0% 96%;
     }
+}
+
+.mountains-home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
