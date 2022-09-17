@@ -91,6 +91,25 @@
             position: absolute;
             bottom: -5%;
             left: 0;
+
+            .back,
+            .middle,
+            .front {
+                animation-duration: 1.2s;
+                animation-timing-function: ease-out;
+            }
+
+            .back {
+                animation-name: slide-down-back;
+            }
+            
+            .middle {
+                animation-name: slide-down-middle;
+            }
+            
+            .front {
+                animation-name: slide-down-front;
+            }
         }
     }
 }
@@ -157,5 +176,35 @@
                 display: none;
             }
         }
+    }
+}
+
+@keyframes slide-down-back {
+    from {
+        transform: translateY(-2%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-down-middle {
+    from {
+        transform: translateY(-8%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-down-front {
+    from {
+        transform: translateY(-20%);
+    }
+
+    to {
+        transform: translateY(0%);
     }
 }
