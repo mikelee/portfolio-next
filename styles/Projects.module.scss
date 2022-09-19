@@ -25,6 +25,7 @@
         }
 
         .image-wrapper {
+            position: relative;
 
             &::after {
                 content: '';
