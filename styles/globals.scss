@@ -4,8 +4,8 @@ body {
     margin: 0;
     font-family: Corn, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: $color-bone;
-    color: $color-graphite;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 a {
@@ -20,4 +20,23 @@ a {
 @font-face {
     font-family: Corn;
     src: url('/CornDemo-Regular.ttf');
+}
+
+:root {
+    --color-primary: #{$color-bone};
+    --color-secondary: #{$color-graphite};
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-primary: #{$color-bone};
+        --color-secondary: #{$color-graphite};
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #{$color-graphite};
+        --color-secondary: #{$color-bone};
+    }
 }
