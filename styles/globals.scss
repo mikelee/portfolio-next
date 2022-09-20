@@ -24,12 +24,14 @@ a {
 
 :root {
     --color-primary: #{$color-bone};
+    --color-primary-light: #{$color-white};
     --color-secondary: #{$color-graphite};
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --color-primary: #{$color-bone};
+        --color-primary-light: #{$color-white};
         --color-secondary: #{$color-graphite};
     }
 }
@@ -37,6 +39,7 @@ a {
 @media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #{$color-graphite};
+        --color-primary-light: #{$color-gray};
         --color-secondary: #{$color-bone};
     }
 }
