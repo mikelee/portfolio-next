@@ -17,6 +17,10 @@ a {
     box-sizing: border-box;
 }
 
+.grecaptcha-badge {
+    display: none;
+}
+
 @font-face {
     font-family: Corn;
     src: url('/CornDemo-Regular.ttf');
