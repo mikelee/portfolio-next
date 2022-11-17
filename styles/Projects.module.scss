@@ -19,6 +19,9 @@
         padding: 32px;
         border-bottom: 2px solid $color-sand;
 
+        &:last-child {
+            border-bottom: none;
+        }
 
         .name {
             text-align: center;
