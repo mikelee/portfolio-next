@@ -125,6 +125,8 @@
                 border: none;
 
                 .image-wrapper {
+                    height: 450px;
+                    width: 250px;
                     perspective: 1500px;
                     perspective-origin: 50% 0%;
                 }
@@ -137,6 +139,11 @@
                     &:hover {
                         transform: rotateX(15deg) rotateY(25deg);
                     }
+                }
+
+                video {
+                    height: 450px;
+                    width: 250px;
                 }
 
                 .try-project-button {
