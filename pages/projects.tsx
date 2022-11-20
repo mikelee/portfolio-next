@@ -19,8 +19,14 @@ const Projects = () => (
                             <h2 className={styles['name']}>{project.name}</h2>
                             <div className={styles['project-info']}>
                                 <div className={styles['image-wrapper']}>
-                                    <div className={`${styles['image']} ${styles[`project-${project.id}`]}`} style={{backgroundImage: `url(${project.image})`}}>
-                                    </div>
+                                    <div className={`${styles['image']} ${styles[`project-${project.id}`]}`} style={{backgroundImage: `url(${project.image})`}}></div>
+                                    <video className={`${styles['video2']}`}
+                                        src={project.video}
+                                        onMouseEnter={e => (e.target as HTMLVideoElement).play()}
+                                        onMouseOut={e => (e.target as HTMLVideoElement).pause()}
+                                        loop
+                                        muted >
+                                    </video>
                                 </div>
                             </div>
                             <Link href={project.url}><a className={styles['try-project-button']}>Try it out!</a></Link>
