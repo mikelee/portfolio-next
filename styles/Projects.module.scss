@@ -30,7 +30,7 @@
         .image-wrapper {
             position: relative;
             height: 400px;
-            width: 225px;
+            width: 224px;
             margin: 32px 0;
 
             &::after {
@@ -63,7 +63,7 @@
             position: relative;
             z-index: 999;
             height: 400px;
-            width: 225px;
+            width: 224px;
             background-size: cover;
             margin: 32px 0;
             border-radius: 8px;
@@ -78,7 +78,7 @@
             left: 0;
             z-index: 99;
             height: 400px;
-            width: 225px;
+            width: 224px;
             border-radius: 8px;
             box-shadow: -16px 16px 16px rgba(black, .3);
         }
@@ -88,7 +88,7 @@
         }
 
         .try-project-button {
-            width: 225px;
+            width: 224px;
             background-color: $color-red;
             color: white;
             text-align: center;
