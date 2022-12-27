@@ -22,7 +22,7 @@ const projects: Project[] = [
         description: 'A to-do list app with a twist. To-dos are linked to rewards. When all the required to-dos are completed, the reward is unlocked.',
         image: '/daily-achievements-image.png',
         video: '/daily-achievements-video.mp4',
-        url: 'https://dailyachievements.herokuapp.com/'
+        url: 'https://rewarded.dev/'
     },
     {
         id: 3,
