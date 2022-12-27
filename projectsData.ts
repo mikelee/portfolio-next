@@ -18,7 +18,7 @@ const projects: Project[] = [
     },
     {
         id: 2,
-        name: 'Daily Achievements',
+        name: 'Rewarded',
         description: 'A to-do list app with a twist. To-dos are linked to rewards. When all the required to-dos are completed, the reward is unlocked.',
         image: '/daily-achievements-image.png',
         video: '/daily-achievements-video.mp4',
