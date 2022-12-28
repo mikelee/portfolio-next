@@ -21,7 +21,7 @@ const projects: Project[] = [
         name: 'Rewarded',
         description: 'A to-do list app with a twist. To-dos are linked to rewards. When all the required to-dos are completed, the reward is unlocked.',
         image: '/rewarded-image.png',
-        video: '/daily-achievements-video.mp4',
+        video: '/rewarded-video.mp4',
         url: 'https://rewarded.dev/'
     },
     {
