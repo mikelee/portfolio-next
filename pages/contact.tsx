@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import React, { useEffect, useRef } from 'react';
 
 import styles from '../styles/Contact.module.scss';
@@ -25,6 +26,7 @@ const Contact = () => {
                 <title>Mike Lee: Contact</title>
                 <meta name='description' content='Send a message to contact Mike Lee.' />
             </Head>
+            <Script src='https://www.google.com/recaptcha/api.js' />
             <main className={styles['contact']}>
                 <h1>Contact</h1>
                 <p>Let&apos;s get in touch!</p>
