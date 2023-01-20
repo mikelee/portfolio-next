@@ -23,6 +23,13 @@
             border-bottom: none;
         }
 
+        .name-container {
+
+            .name {
+                text-align: center;
+            }
+        }
+
         .image-wrapper {
             position: relative;
             height: 400px;
@@ -101,6 +108,13 @@
 
             .project {
                 border: none;
+
+                .name-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    height: 6rem;
+                }
 
                 .image-wrapper {
                     height: 450px;
