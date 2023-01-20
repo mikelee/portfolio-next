@@ -4,3 +4,28 @@ $color-gray: #5D6166;
 $color-red: #D94A4A;
 $color-sand: #D6D3C7;
 $color-white: #FFFFFF;
+
+@mixin button {
+    width: 100%;
+    background-color: $color-red;
+    color: white;
+    font-family: Corn;
+    font-size: 16px;
+    text-align: center;
+    margin: 32px 0;
+    padding: 16px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: -8px 8px 8px rgba(black, .3);
+    transition: all .3s;
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: -12px 12px 12px rgba(black, .3);
+    }
+
+    &:active {
+        transform: translateY(4px);
+        box-shadow: -4px 4px 4px rgba(black, .3);
+    }
+}
