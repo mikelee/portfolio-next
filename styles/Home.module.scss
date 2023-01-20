@@ -27,26 +27,8 @@
         width: 100%;
 
         .button {
+            @include button;
             width: 70%;
-            background-color: $color-red;
-            color: white;
-            text-align: center;
-            margin-top: 32px;
-            padding: 16px;
-            border: none;
-            border-radius: 100px;
-            box-shadow: -8px 8px 8px rgba(black, .3);
-            transition: all .3s;
-            
-            &:hover {
-                transform: translateY(-4px);
-                box-shadow: -12px 12px 12px rgba(black, .3);
-            }
-
-            &:active {
-                transform: translateY(4px);
-                box-shadow: -4px 4px 4px rgba(black, .3);
-            }
         }
     }
 
@@ -86,8 +68,6 @@
             .button {
                 width: 250px;
                 margin: 32px;
-                margin-top: 80px;
-                padding: 24px;
             }
         }
     }

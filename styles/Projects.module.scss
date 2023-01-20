@@ -23,10 +23,6 @@
             border-bottom: none;
         }
 
-        .name {
-            text-align: center;
-        }
-
         .image-wrapper {
             position: relative;
             height: 400px;
@@ -88,26 +84,8 @@
         }
 
         .try-project-button {
+            @include button;
             width: 224px;
-            background-color: $color-red;
-            color: white;
-            text-align: center;
-            margin-top: 32px;
-            padding: 16px;
-            border: none;
-            border-radius: 100px;
-            box-shadow: -8px 8px 8px rgba(black, .3);
-            transition: all .3s;
-
-            &:hover {
-                transform: translateY(-4px);
-                box-shadow: -12px 12px 12px rgba(black, .3);
-            }
-            
-            &:active {
-                transform: translateY(4px);
-                box-shadow: -4px 4px 4px rgba(black, .3);
-            }
         }
     }
 }
