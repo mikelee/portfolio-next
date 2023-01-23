@@ -124,19 +124,6 @@
     display: none !important;
 }
 
-@media screen and (max-width: 720px) {
-    .navigation {
-
-        .nav-toggle {
-            display: inline-block;
-        }
-
-        .nav {
-            display: none;
-        }
-    }
-}
-
 @media screen and (min-width: 721px) {
     .navigation {
         padding-right: 24px;
