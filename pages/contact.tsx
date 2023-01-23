@@ -27,13 +27,16 @@ const Contact = () => {
     }, [formRef]);
 
     const areRequiredFieldsValid = () => {
-        let allFieldsValid = true;
+        const requiredElements = document.querySelectorAll("[required]");
 
-        document.querySelectorAll("[required]").forEach(requiredElement => {
-            if (!(requiredElement as HTMLFormElement).reportValidity()) allFieldsValid = false;
-        });
+        for (let i = 0; i < requiredElements.length; i++) {
+            // if not valid
+            if (!(requiredElements[i] as HTMLFormElement).reportValidity()) {
+                return false;
+            }
+        }
 
-        return allFieldsValid;
+        return true;
     }
 
     return (
