@@ -16,9 +16,25 @@ const Contact = () => {
 
     useEffect(() => {
         (window).onSubmit = async function(token: string) {
-            formRef.current?.submit();
+            const requiredFieldsValid = areRequiredFieldsValid();
+
+            if (requiredFieldsValid) {
+                formRef.current?.submit();
+            } else {
+                (window as any).grecaptcha.reset();
+            }
         }
     }, [formRef]);
+
+    const areRequiredFieldsValid = () => {
+        let allFieldsValid = true;
+
+        document.querySelectorAll("[required]").forEach(requiredElement => {
+            if (!(requiredElement as HTMLFormElement).reportValidity()) allFieldsValid = false;
+        });
+
+        return allFieldsValid;
+    }
 
     return (
         <>
