@@ -22,7 +22,7 @@ const Projects = () => (
                             <div className={styles['project-info']}>
                                 <div className={styles['image-wrapper']}>
                                     <div className={`${styles['image']} ${styles[`project-${project.id}`]}`} style={{backgroundImage: `url(${project.image})`}}></div>
-                                    <video className={`${styles['video2']}`}
+                                    <video
                                         src={project.video}
                                         onMouseEnter={e => (e.target as HTMLVideoElement).play()}
                                         onMouseOut={e => (e.target as HTMLVideoElement).pause()}
