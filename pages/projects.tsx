@@ -8,7 +8,7 @@ const Projects = () => (
     <>
         <Head>
             <title>Mike Lee: Projects</title>
-            <meta name='description' content='Mike Lee developed several web apps using typescript, javascript, react, redux, firebase, sql, sass, css, html, etc.' />
+            <meta name='description' content='Mike Lee developed several web apps using TypeScript, JavaScript, React, Redux, Firebase, SQL, SASS, CSS, HTML, etc.' />
         </Head>
         <main className={styles['projects']}>
             <h1 className={styles['title']}>Projects</h1>
