@@ -1,3 +1,4 @@
+// Colors
 $color-bone: #F0ECDF;
 $color-graphite: #44484D;
 $color-gray: #5D6166;
@@ -5,6 +6,7 @@ $color-red: #D94A4A;
 $color-sand: #D6D3C7;
 $color-white: #FFFFFF;
 
+// Mixins
 @mixin button {
     width: 100%;
     background-color: $color-red;
