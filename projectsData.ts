@@ -31,6 +31,14 @@ const projects: Project[] = [
         image: '/mind-right-image.png',
         video: '/mind-right-video.mp4',
         url: 'https://mindright.onrender.com/'
+    },
+    {
+        id: 4,
+        name: 'Evolution Simulator',
+        description: 'See evolution in action, where only the fittest survive. Watch how creatures\' DNA evolves over time.',
+        image: '',
+        video: '/evolution-simulator-video.mp4',
+        url: 'https://github.com/mikelee/evolution-simulator'
     }
 ];
 
