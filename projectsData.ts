@@ -31,14 +31,6 @@ const projects: Project[] = [
         image: '/mind-right-image.png',
         video: '/mind-right-video.mp4',
         url: 'https://mindright.onrender.com/'
-    },
-    {
-        id: 4,
-        name: 'Sample business',
-        description: 'Take a look at what your business\'s presence on the web could look like. Complete with SEO.',
-        image: '/sample-business-image.png',
-        video: '/gravity-simulator-video.mp4',
-        url: 'https://sample-business.vercel.app/'
     }
 ];
 
