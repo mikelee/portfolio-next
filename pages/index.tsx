@@ -43,6 +43,9 @@ const Home: NextPage = () => {
                     <circle cx="311.5" cy="195.5" r="1.5" fill="#F2F2F2" fillOpacity="0.55"/>
                     <circle cx="199.5" cy="95.5" r="3" fill="#F2F2F2" fillOpacity="0.55"/>
                     <circle cx="868.5" cy="455.5" r="2.1" fill="#F2F2F2" fillOpacity="0.55"/>
+                    <line className={`${styles['shooting-star']} ${styles['first']}`} x1="752.75" y1="257.368" x2="925.955" y2="157.368" stroke="white"/>
+                    <line className={`${styles['shooting-star']} ${styles['second']}`} x1="237.148" y1="222.855" x2="131.082" y2="116.789" stroke="white"/>
+                    <line className={`${styles['shooting-star']} ${styles['third']}`} x1="363.607" y1="262.334" x2="309.394" y2="131.034" stroke="white"/>
                 </svg>
             </div>
         </>

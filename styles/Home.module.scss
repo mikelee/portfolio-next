@@ -62,6 +62,24 @@
         .front {
             animation-name: slide-in-front;
         }
+
+        .shooting-star {
+            opacity: 0;
+            stroke-dasharray: 220;
+            animation: shooting-star 1s forwards;
+    
+            &.first {
+                animation-delay: 1s;
+            }
+    
+            &.second {
+                animation-delay: 2s;
+            }
+    
+            &.third {
+                animation-delay: 4s;
+            }
+        }
     }
 }
 
@@ -113,5 +131,16 @@
 
     to {
         transform: translateX(0%);
+    }
+}
+
+@keyframes shooting-star {
+    from {
+        opacity: 1;
+        stroke-dashoffset: -200;
+    }
+    
+    to {
+        stroke-dashoffset: 200;
     }
 }
