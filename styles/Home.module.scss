@@ -11,6 +11,12 @@
         align-items: center;
     }
 
+    .name,
+    .text {
+        background-color: var(--color-primary);
+        z-index: 99;
+    }
+
     .name {
         font-size: 3rem;
     }
