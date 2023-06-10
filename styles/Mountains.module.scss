@@ -39,6 +39,14 @@
             animation-delay: 4s;
         }
     }
+
+    .cloud-middle {
+        animation: fade-middle 2.4s forwards ease-out;
+    }
+
+    .cloud-back {
+        animation: fade-back 2.4s forwards ease-out;
+    }
 }
 
 @keyframes slide-in-back {
@@ -79,5 +87,40 @@
     
     to {
         stroke-dashoffset: 200;
+    }
+}
+
+@keyframes fade-middle {
+    0% {
+        transform: translateX(-5%);
+    }
+
+    20% {
+        opacity: 1;
+    }
+    
+    50% {
+        transform: translateX(0%);
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fade-back {
+    0% {
+        transform: translateX(-2%);
+    }
+    
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    100%{
+        opacity: 0;
     }
 }
