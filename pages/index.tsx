@@ -9,13 +9,13 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Mike Lee: Fullstack Developer</title>
-                <meta name='description' content='Mike Lee is a FullStack Web Developer.' />
+                <title>Mike Lee: Full Stack Developer</title>
+                <meta name='description' content='Mike Lee is a Full Stack Web Developer.' />
             </Head>
             <div className={styles['home']}>
                 <main>
                     <h1 className={styles['name']}>Mike Lee</h1>
-                    <p className={styles['text']}>FullStack Developer</p>
+                    <p className={styles['text']}>Full Stack Developer</p>
                     <div className={styles['buttons']}>
                         <Link href='/projects'><a className={styles['button']}>Projects</a></Link>
                         <Link href='/contact'><a className={styles['button']}>Get In Touch</a></Link>
