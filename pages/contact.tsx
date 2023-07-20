@@ -42,7 +42,7 @@ const Contact = () => {
     return (
         <>
             <Head>
-                <title>Mike Lee: Contact</title>
+                <title>Mike Lee | Contact</title>
                 <meta name='description' content='Send a message to contact Mike Lee.' />
             </Head>
             <Script src='https://www.google.com/recaptcha/api.js' />

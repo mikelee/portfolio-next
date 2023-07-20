@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Mike Lee: Full Stack Developer</title>
+                <title>Mike Lee | Full Stack Developer</title>
                 <meta name='description' content='Mike Lee is a Full Stack Web Developer.' />
             </Head>
             <div className={styles['home']}>

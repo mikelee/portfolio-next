@@ -7,7 +7,7 @@ import styles from '../styles/Projects.module.scss';
 const Projects = () => (
     <>
         <Head>
-            <title>Mike Lee: Projects</title>
+            <title>Mike Lee | Projects</title>
             <meta name='description' content='Mike Lee developed several web apps using TypeScript, JavaScript, React, Redux, Firebase, SQL, SASS, CSS, HTML, etc.' />
         </Head>
         <main className={styles['projects']}>
