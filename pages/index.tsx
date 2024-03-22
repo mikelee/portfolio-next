@@ -17,8 +17,8 @@ const Home: NextPage = () => {
                     <h1 className={styles['name']}>Mike Lee</h1>
                     <p className={styles['text']}>Full Stack Developer</p>
                     <div className={styles['buttons']}>
-                        <Link href='/projects'><a className={styles['button']}>Projects</a></Link>
-                        <Link href='/contact'><a className={styles['button']}>Get In Touch</a></Link>
+                        <Link href='/projects' className={styles['button']}>Projects</Link>
+                        <Link href='/contact' className={styles['button']}>Get In Touch</Link>
                     </div>
                 </main>
                 <Mountains />
