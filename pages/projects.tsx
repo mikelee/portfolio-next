@@ -31,7 +31,7 @@ const Projects = () => (
                                     </video>
                                 </div>
                             </div>
-                            <Link href={project.url}><a className={styles['try-project-button']}>Try it out!</a></Link>
+                            <Link href={project.url} className={styles['try-project-button']}>Try it out!</Link>
                         </section>
                     ))
                 }

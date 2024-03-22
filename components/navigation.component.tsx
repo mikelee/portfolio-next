@@ -21,16 +21,16 @@ const Navigation: React.FC<Props> = ({ navVisible, setNavVisible }) => (
             </button>
             <ul className={styles['nav-list']}>
                 <li>
-                    <Link href='/'><a className={styles['nav-link']}>Home</a></Link>
+                    <Link href='/' className={styles['nav-link']}>Home</Link>
                 </li>
                 <li>
-                    <Link href='/projects'><a className={styles['nav-link']}>Projects</a></Link>
+                    <Link href='/projects' className={styles['nav-link']}>Projects</Link>
                 </li>
                 <li>
-                    <Link href='https://github.com/mikelee'><a className={styles['nav-link']}>Github</a></Link>
+                    <Link href='https://github.com/mikelee' className={styles['nav-link']}>Github</Link>
                 </li>
                 <li>
-                    <Link href='/contact'><a className={styles['nav-link']}>Contact</a></Link>
+                    <Link href='/contact' className={styles['nav-link']}>Contact</Link>
                 </li>
             </ul>
             <svg className={styles['mountains-nav']} width="100%" viewBox="0 -12 1166 577" fill="none" xmlns="http://www.w3.org/2000/svg">
