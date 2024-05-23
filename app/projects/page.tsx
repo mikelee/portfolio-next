@@ -1,10 +1,10 @@
-'use client'
-
 import Head from 'next/head';
 import Link from 'next/link';
 import projectsData from '../../projectsData';
 
 import styles from '../../styles/Projects.module.scss';
+
+import HoverVideo from '../../components/hover-video.component';
 
 const Projects = () => (
     <>
@@ -24,13 +24,7 @@ const Projects = () => (
                             <div className={styles['project-info']}>
                                 <div className={styles['image-wrapper']}>
                                     <div className={`${styles['image']} ${styles[`project-${project.id}`]}`} style={{backgroundImage: `url(${project.image})`}}></div>
-                                    <video
-                                        src={project.video}
-                                        onMouseEnter={e => (e.target as HTMLVideoElement).play()}
-                                        onMouseOut={e => (e.target as HTMLVideoElement).pause()}
-                                        loop
-                                        muted >
-                                    </video>
+                                    <HoverVideo src={project.video} />
                                 </div>
                             </div>
                             <Link href={project.url} className={styles['try-project-button']}>Try it out!</Link>
