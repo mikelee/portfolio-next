@@ -1,0 +1,50 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 32px 0;
+
+    label {
+        align-self: flex-start;
+        font-size: .75rem;
+        margin-bottom: 16px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: white;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 8px;
+        border: 1px solid $color-sand;
+        border: none;
+        border-radius: 8px;
+        box-shadow: -8px 8px 8px rgba(black, .3);
+    }
+    
+    input {
+        margin-bottom: 32px;
+    }
+
+    button {
+        @include button;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .contact-form {
+        width: 80%;
+
+        button {
+            width: 250px;
+            align-self: flex-start;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact-form {
+        width: 60%;
+    }
+}
