@@ -1,8 +1,10 @@
+'use client'
+
 import Head from 'next/head';
 import Script from 'next/script';
 import React, { useEffect, useRef } from 'react';
 
-import styles from '../styles/Contact.module.scss';
+import styles from '../../styles/Contact.module.scss';
 
 declare global {
     interface Window {
