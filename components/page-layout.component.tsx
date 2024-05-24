@@ -1,4 +1,7 @@
+'use client'
+
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 import Navigation from './navigation.component';
 
@@ -9,9 +12,11 @@ interface Props {
 const PageLayout: React.FC<Props> = ({ children }) => {
     const [navVisible, setNavVisible] = useState(false);
     
+    const pathName = usePathname();
+
     useEffect(() => {
         setNavVisible(false);
-    }, [children]);
+    }, [pathName]);
     
     useEffect(() => {
         navVisible
@@ -21,7 +26,7 @@ const PageLayout: React.FC<Props> = ({ children }) => {
 
     return (
         <>
-            <Navigation navVisible={navVisible} setNavVisible={setNavVisible} />
+            <Navigation navVisible={navVisible} pathName={pathName} setNavVisible={setNavVisible} />
             {children}
         </>
     );
