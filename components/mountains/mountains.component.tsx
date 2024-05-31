@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-import styles from '../styles/Mountains.module.scss';
+import styles from './mountains.module.scss';
 
 const Mountains: React.FC = () => {
     const [colorScheme, setColorScheme] = useState<'dark' | 'light' | null>(null);

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import projectsData from '../../projectsData';
 
-import styles from '../../styles/Projects.module.scss';
+import styles from './projects.module.scss';
 
 import HoverVideo from '../../components/hover-video.component';
 

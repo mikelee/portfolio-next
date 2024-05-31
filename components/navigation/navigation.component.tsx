@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import styles from '../styles/Navigation.module.scss';
+import styles from './Navigation.module.scss';
 
-import CloseIcon from './close-icon.component';
-import MenuIcon from './menu-icon.component';
+import CloseIcon from '../close-icon.component';
+import MenuIcon from '../menu-icon.component';
 
 interface Props {
     navVisible: boolean,

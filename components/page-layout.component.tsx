@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-import Navigation from './navigation.component';
+import Navigation from './navigation/navigation.component';
 
 interface Props {
     children: React.ReactNode

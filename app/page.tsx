@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
-import styles from '../styles/Home.module.scss';
-import Mountains from '../components/mountains.component';
+import styles from './home.module.scss';
+import Mountains from '../components/mountains/mountains.component';
 
 // This page's metadata is the default metadata in ./layout.tsx (root  layout)
 

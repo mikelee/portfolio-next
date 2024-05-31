@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 
-import styles from '../styles/ContactForm.module.scss';
+import styles from './contact-form.module.scss';
 
 declare global {
     interface Window {

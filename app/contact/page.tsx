@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 import React from 'react';
 
-import styles from '../../styles/Contact.module.scss';
+import styles from './contact.module.scss';
 
-import ContactForm from '../../components/contact-form';
+import ContactForm from '../../components/contact-form/contact-form';
 
 export const metadata: Metadata = {
     title: 'Contact',
