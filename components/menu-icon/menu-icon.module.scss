@@ -1,0 +1,68 @@
+.menu-icon {
+    #line-top,
+    #line-bottom {
+        transform-origin: 50%;
+    }
+    
+    // hamburger menu icon
+    &.clicked {
+        #line-top {
+            animation: angleDown .3s linear forwards;
+        }
+
+        #line-bottom {
+            animation: angleUp .3s linear forwards;
+        }
+    }
+
+    // close icon
+    &:not(.clicked) {
+        #line-top {
+            animation: angleDownReverse .3s linear forwards;
+        }
+
+        #line-bottom {
+            animation: angleUpReverse .3s linear forwards;
+        }
+    }
+}
+
+@keyframes angleUp {
+    from {
+        transform: rotate(0deg) scaleX(1) translateY(0px);
+    }
+
+    to {
+        transform: rotate(-45deg) scaleX(.5) translateY(24px);
+    }
+}
+
+@keyframes angleUpReverse {
+    from {
+        transform: rotate(-45deg) scaleX(.5) translateY(24px);
+    }
+
+    to {
+        transform: rotate(0deg) scaleX(1) translateY(0px);
+    }
+}
+
+@keyframes angleDown {
+    from {
+        transform: rotate(0deg) scaleX(1) translateY(0px);
+    }
+
+    to {
+        transform: rotate(45deg) scaleX(.5) translateY(-24px);
+    }
+}
+
+@keyframes angleDownReverse {
+    from {
+        transform: rotate(45deg) scaleX(.5) translateY(-24px);
+    }
+
+    to {
+        transform: rotate(0deg) scaleX(1) translateY(0px);
+    }
+}
