@@ -12,6 +12,10 @@ interface Props {
 
 const Navigation: React.FC<Props> = ({ navVisible, setNavVisible, pathName }) => {
     const isCurrentLink = (e: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
+        setNavVisible(false);
+
+        return;
+
         const type = (e.target as HTMLLIElement).getAttribute('data-type');
 
         if (type === 'nav-link') {
@@ -24,23 +28,23 @@ const Navigation: React.FC<Props> = ({ navVisible, setNavVisible, pathName }) =>
     }
 
     return (
-        <div className={styles['navigation']}>
+        <div id='home' className={styles['navigation']}>
             <button aria-label='menu' className={styles['nav-toggle']} onClick={() => setNavVisible(!navVisible)}>
                 <MenuIcon clicked={navVisible} size={60} />
             </button>
             <nav className={`${styles['nav']} ${navVisible ? `${styles['nav-visible']}` : ''}`} data-testid='nav'>
                 <ul className={styles['nav-list']} onClick={e => isCurrentLink(e)}>
                     <li>
-                        <Link href='/' className={styles['nav-link']} data-path='/' data-type='nav-link'>Home</Link>
+                        <a href='/#home' className={styles['nav-link']} data-path='/' data-type='nav-link'>Home</a>
                     </li>
                     <li>
-                        <Link href='/projects' className={styles['nav-link']} data-path='/projects' data-type='nav-link'>Projects</Link>
+                        <a href='/#projects' className={styles['nav-link']} data-path='/projects' data-type='nav-link'>Projects</a>
                     </li>
                     <li>
-                        <Link href='https://github.com/mikelee' className={styles['nav-link']} data-path='https://github.com/mikelee' data-type='nav-link'>Github</Link>
+                        <a href='https://github.com/mikelee' className={styles['nav-link']} data-path='https://github.com/mikelee' data-type='nav-link'>Github</a>
                     </li>
                     <li>
-                        <Link href='/contact' className={styles['nav-link']} data-path='/contact' data-type='nav-link'>Contact</Link>
+                        <a href='/#contact' className={styles['nav-link']} data-path='/contact' data-type='nav-link'>Contact</a>
                     </li>
                 </ul>
                 <svg className={styles['mountains-nav']} width="100%" viewBox="0 -12 1166 577" fill="none" xmlns="http://www.w3.org/2000/svg">
