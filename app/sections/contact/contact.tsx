@@ -11,7 +11,7 @@ const Contact = () => (
         <div id='contact' className={styles['contact']}>
             <h1>Contact</h1>
             <p>Let&apos;s get in touch!</p>
-            <ContactForm />
+            {/* <ContactForm /> */}
         </div>
     </>
 );
