@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './Navigation.module.scss';
 
 import CloseIcon from '../close-icon.component';
-import MenuIcon from '../menu-icon.component';
+import MenuIcon from '../menu-icon/menu-icon.component';
 
 interface Props {
     navVisible: boolean,
@@ -27,7 +27,7 @@ const Navigation: React.FC<Props> = ({ navVisible, setNavVisible, pathName }) =>
     return (
         <div className={styles['navigation']}>
             <button aria-label='menu' className={`${styles['nav-toggle']} ${navVisible ? `${styles['nav-invisible']}` : ''}`} onClick={() => setNavVisible(true)}>
-                <MenuIcon size={60} />
+                <MenuIcon clicked={navVisible} size={60} />
             </button>
             <nav className={`${styles['nav']} ${navVisible ? `${styles['nav-visible']}` : ''}`} data-testid='nav'>
                 <button className={styles['close-button']} onClick={() => setNavVisible(false)}>
