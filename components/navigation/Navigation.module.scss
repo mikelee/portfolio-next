@@ -9,6 +9,7 @@
     padding-right: 0;
 
     .nav-toggle {
+        z-index: inherit;
         align-self: flex-end;
         width: fit-content;
         background-color: $color-red;
@@ -42,25 +43,9 @@
         padding: 24px;
         background-color: var(--color-primary);
         overflow: hidden;
-    
-        .close-button {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 24px;
-            padding: 8px;
-            background: none;
-            border: none;
-            cursor: pointer;
 
-            &:active .close-icon--path, &:hover .close-icon--path {
-                fill: $color-red;
-            }
-        
-            .close-icon--path {
-                fill: var(--color-secondary);
-                transition: all .3s;
-            }
+        &.nav-visible {
+            display: flex;
         }
     
         &-list {
@@ -116,14 +101,6 @@
     }
 }
 
-.nav-visible {
-    display: flex !important;
-}
-
-.nav-invisible {
-    display: none !important;
-}
-
 @media screen and (min-width: 721px) {
     .navigation {
         padding-right: 24px;
@@ -138,10 +115,6 @@
             height: fit-content;
             padding: 0;
             width: 100%;
-
-            .close-button {
-                display: none;
-            }
 
             &-list {
                 flex-direction: row;

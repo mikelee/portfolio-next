@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import styles from './Navigation.module.scss';
 
-import CloseIcon from '../close-icon.component';
 import MenuIcon from '../menu-icon/menu-icon.component';
 
 interface Props {
@@ -26,13 +25,10 @@ const Navigation: React.FC<Props> = ({ navVisible, setNavVisible, pathName }) =>
 
     return (
         <div className={styles['navigation']}>
-            <button aria-label='menu' className={`${styles['nav-toggle']} ${navVisible ? `${styles['nav-invisible']}` : ''}`} onClick={() => setNavVisible(true)}>
+            <button aria-label='menu' className={styles['nav-toggle']} onClick={() => setNavVisible(!navVisible)}>
                 <MenuIcon clicked={navVisible} size={60} />
             </button>
             <nav className={`${styles['nav']} ${navVisible ? `${styles['nav-visible']}` : ''}`} data-testid='nav'>
-                <button className={styles['close-button']} onClick={() => setNavVisible(false)}>
-                    <CloseIcon size={30} />
-                </button>
                 <ul className={styles['nav-list']} onClick={e => isCurrentLink(e)}>
                     <li>
                         <Link href='/' className={styles['nav-link']} data-path='/' data-type='nav-link'>Home</Link>
