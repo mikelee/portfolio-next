@@ -7,11 +7,11 @@ import ContactForm from '../../../components/contact-form/contact-form';
 
 const Contact = () => (
     <>
-        {/* <Script src='https://www.google.com/recaptcha/api.js' /> */}
+        <Script src='https://www.google.com/recaptcha/api.js' />
         <div id='contact' className={styles['contact']}>
             <h1>Contact</h1>
             <p>Let&apos;s get in touch!</p>
-            {/* <ContactForm /> */}
+            <ContactForm />
         </div>
     </>
 );

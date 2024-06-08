@@ -1,29 +1,29 @@
-// 'use client'
+'use client'
 
 import { useEffect, useRef } from 'react';
 
 import styles from './contact-form.module.scss';
 
-// declare global {
-//     interface Window {
-//         onSubmit: (token: string) => Promise<void>
-//     }
-// }
+declare global {
+    interface Window {
+        onSubmit: (token: string) => Promise<void>
+    }
+}
 
 const ContactForm = () => {
-    // const formRef = useRef<HTMLFormElement>(null);
+    const formRef = useRef<HTMLFormElement>(null);
 
-    // useEffect(() => {
-    //     (window).onSubmit = async function(token: string) {
-    //         const requiredFieldsValid = areRequiredFieldsValid();
+    useEffect(() => {
+        (window).onSubmit = async function(token: string) {
+            const requiredFieldsValid = areRequiredFieldsValid();
 
-    //         if (requiredFieldsValid) {
-    //             formRef.current?.submit();
-    //         } else {
-    //             (window as any).grecaptcha.reset();
-    //         }
-    //     }
-    // }, [formRef]);
+            if (requiredFieldsValid) {
+                formRef.current?.submit();
+            } else {
+                (window as any).grecaptcha.reset();
+            }
+        }
+    }, [formRef]);
 
     const areRequiredFieldsValid = () => {
         const requiredElements = document.querySelectorAll("[required]");
@@ -38,9 +38,9 @@ const ContactForm = () => {
         return true;
     }
     return (
-        <form className={styles['contact-form']}  action={'https://usebasin.com/f/e94fc554851b'} method='POST' >
+        <form className={styles['contact-form']} ref={formRef} action={'https://usebasin.com/f/e94fc554851b'} method='POST' >
             <label htmlFor='name'>Name</label>
-            <input type='text' name='name' placeholder='Your name' required autoFocus />
+            <input type='text' name='name' placeholder='Your name' required />
             <label htmlFor='email'>Email</label>
             <input type='email' name='email' placeholder='username@example.com' required />
             <label htmlFor='message'>Message</label>
