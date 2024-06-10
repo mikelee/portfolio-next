@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from './Navigation.module.scss';
+import styles from './navigation.module.scss';
 
 import MenuIcon from '../menu-icon/menu-icon.component';
 
