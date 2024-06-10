@@ -40,7 +40,7 @@ const ContactForm = () => {
     return (
         <form className={styles['contact-form']} ref={formRef} action={'https://usebasin.com/f/e94fc554851b'} method='POST' >
             <label htmlFor='name'>Name</label>
-            <input type='text' name='name' placeholder='Your name' required autoFocus />
+            <input type='text' name='name' placeholder='Your name' required />
             <label htmlFor='email'>Email</label>
             <input type='email' name='email' placeholder='username@example.com' required />
             <label htmlFor='message'>Message</label>
