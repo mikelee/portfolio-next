@@ -6,7 +6,7 @@ import styles from './projects.module.scss';
 import HoverVideo from '../../components/hover-video.component';
 
 const Projects = () => (
-    <div className={styles['projects']}>
+    <div id='projects' className={styles['projects']}>
         <h1 className={styles['title']}>Projects</h1>
         <div className={styles['projects-display']}>
             {
