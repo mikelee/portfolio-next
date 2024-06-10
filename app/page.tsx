@@ -1,23 +1,19 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
 
 import styles from './home.module.scss';
-import Mountains from '../components/mountains/mountains.component';
+
+import Landing from '../sections/landing/landing';
+import Projects from '../sections/projects/projects';
+import Contact from '../sections/contact/contact';
 
 // This page's metadata is the default metadata in ./layout.tsx (root  layout)
 
 const Home: NextPage = () => {
     return (
         <div className={styles['home']}>
-            <main>
-                <h1 className={styles['name']}>Mike Lee</h1>
-                <p className={styles['text']}>Full Stack Developer</p>
-                <div className={styles['buttons']}>
-                    <Link href='/projects' className={styles['button']}>Projects</Link>
-                    <Link href='/contact' className={styles['button']}>Get In Touch</Link>
-                </div>
-            </main>
-            <Mountains />
+            <Landing />
+            <Projects />
+            <Contact />
         </div>
     );
 }

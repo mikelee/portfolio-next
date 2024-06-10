@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import Link from 'next/link';
 import projectsData from '../../projectsData';
 
@@ -6,13 +5,8 @@ import styles from './projects.module.scss';
 
 import HoverVideo from '../../components/hover-video.component';
 
-export const metadata: Metadata = {
-    title: 'Projects',
-    description: 'Mike Lee developed several web apps using TypeScript, JavaScript, React, Redux, Firebase, SQL, SASS, CSS, HTML, etc.'
-};
-
 const Projects = () => (
-    <main className={styles['projects']}>
+    <div className={styles['projects']}>
         <h1 className={styles['title']}>Projects</h1>
         <div className={styles['projects-display']}>
             {
@@ -32,7 +26,7 @@ const Projects = () => (
                 ))
             }
         </div>
-    </main>
+    </div>
 );
 
 export default Projects;
