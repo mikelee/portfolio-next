@@ -1,5 +1,3 @@
-'use client'
-
 interface Props {
     src: string
 }
