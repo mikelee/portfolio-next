@@ -7,8 +7,8 @@ $color-sand: #D6D3C7;
 $color-white: #FFFFFF;
 
 // Dimensions
-$navHeight: 100px;
-$navHeightMinimized: 50px;
+$nav-height-normal: 100px;
+$nav-height-minimized: 50px;
 
 // Mixins
 @mixin button {

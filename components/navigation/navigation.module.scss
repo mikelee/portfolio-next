@@ -6,7 +6,7 @@ $transition-speed: .6s;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: $navHeight;
+    height: $nav-height-normal;
     width: 100%;
     padding: 24px;
     padding-right: 0;
@@ -147,7 +147,7 @@ $transition-speed: .6s;
     }
 
     .navigation-minimized {
-        height: $navHeightMinimized;
+        height: $nav-height-minimized;
         padding: 0;
         padding-right: 24px;
         box-shadow: 0 8px 12px rgba(black, .3);

@@ -1,8 +1,8 @@
 .landing {
     position: relative;
-    height: calc(100vh - $navHeight);
+    height: calc(100vh - $nav-height-normal);
     width: 100vw;
-    margin-top: $navHeight;
+    margin-top: $nav-height-normal;
     padding: 0 32px;
     overflow: hidden !important;
 
