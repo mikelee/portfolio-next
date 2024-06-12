@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useScrollPosition } from '../../hooks/useScrollPosition';
 
 import styles from './navigation.module.scss';
 
@@ -11,6 +12,8 @@ interface Props {
 }
 
 const Navigation: React.FC<Props> = ({ navVisible, setNavVisible, pathName }) => {
+    const scrollPosition = useScrollPosition();
+
     const linkClicked = (e: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
         const type = (e.target as HTMLLIElement).getAttribute('data-type');
 
@@ -20,7 +23,7 @@ const Navigation: React.FC<Props> = ({ navVisible, setNavVisible, pathName }) =>
     }
 
     return (
-        <div className={styles['navigation']}>
+        <div className={`${styles['navigation']} ${scrollPosition > 0 ? styles['navigation-minimized'] : ''}`}>
             <button aria-label='menu' className={styles['nav-toggle']} onClick={() => setNavVisible(!navVisible)}>
                 <MenuIcon clicked={navVisible} size={60} />
             </button>

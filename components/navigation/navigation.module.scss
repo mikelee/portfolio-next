@@ -1,3 +1,5 @@
+$transition-speed: .6s;
+
 .navigation {
     position: fixed;
     z-index: 9999;
@@ -106,6 +108,7 @@
     .navigation {
         padding-right: 24px;
         background-color: var(--color-primary);
+        transition: all $transition-speed ease-out;
 
         .nav-toggle {
             display: none;
@@ -130,7 +133,8 @@
             &-link {
                 font-size: 1rem;
                 padding: 8px;
-    
+                transition: all $transition-speed ease-out;
+
                 &:hover {
                     transform: translateY(-3px);
                 }
@@ -139,6 +143,17 @@
             .mountains-nav {
                 display: none;
             }
+        }
+    }
+
+    .navigation-minimized {
+        height: $navHeightMinimized;
+        padding: 0;
+        padding-right: 24px;
+        box-shadow: 0 8px 12px rgba(black, .3);
+
+        .nav-link {
+            font-size: .75rem;
         }
     }
 }
