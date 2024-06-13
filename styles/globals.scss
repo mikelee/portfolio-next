@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-family: Corn, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    color: var(--color-secondary);
 }
 
 body {
@@ -29,26 +28,4 @@ a {
     font-family: Corn;
     src: url('/CornDemo-Regular.ttf');
     font-display: swap;
-}
-
-:root {
-    --color-primary: #{$color-bone};
-    --color-primary-light: #{$color-white};
-    --color-secondary: #{$color-graphite};
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-primary: #{$color-bone};
-        --color-primary-light: #{$color-white};
-        --color-secondary: #{$color-graphite};
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: #{$color-graphite};
-        --color-primary-light: #{$color-gray};
-        --color-secondary: #{$color-bone};
-    }
 }
