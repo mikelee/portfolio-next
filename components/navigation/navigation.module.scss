@@ -118,7 +118,8 @@ $transition-speed: .6s;
 @media screen and (min-width: 721px) {
     .navigation {
         padding-right: 24px;
-        background-color: var(--color-primary);
+        background-color: rgba($color-black, .7);
+        backdrop-filter: blur(8px); // creates frosted glass effect with the semitransparent background
         transition: all $transition-speed ease-out;
 
         .nav-toggle {
