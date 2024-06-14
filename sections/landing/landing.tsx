@@ -1,11 +1,12 @@
 import Link from 'next/link';
 
 import styles from './landing.module.scss';
-import Mountains from '../../components/mountains/mountains.component';
+import Stars from '../../components/stars/stars';
 
 const Landing = () => (
     <div className={styles['landing-wrapper']}>
         <div className={styles['landing']}>
+            <Stars />
             <main>
                 <h1 className={styles['name']}>Mike Lee</h1>
                 <p className={styles['text']}>Full Stack Developer</p>
@@ -14,7 +15,6 @@ const Landing = () => (
                     <Link href='/contact' className={styles['button']}>Get In Touch</Link>
                 </div>
             </main>
-            <Mountains />
         </div>
     </div>
 );
