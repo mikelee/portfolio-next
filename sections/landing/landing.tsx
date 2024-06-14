@@ -11,8 +11,8 @@ const Landing = () => (
                 <h1 className={styles['name']}>Mike Lee</h1>
                 <p className={styles['text']}>Full Stack Developer</p>
                 <div className={styles['buttons']}>
-                    <Link href='/projects' className={styles['button']}>Projects</Link>
-                    <Link href='/contact' className={styles['button']}>Get In Touch</Link>
+                    <Link href='/#projects' className={styles['button']}>Projects</Link>
+                    <Link href='/#contact' className={styles['button']}>Get In Touch</Link>
                 </div>
             </main>
         </div>
