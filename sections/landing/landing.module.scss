@@ -4,7 +4,13 @@
 
 .landing {
     position: relative;
-    height: calc(100vh - $nav-height-normal);
+    top: -$nav-height-normal;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
     width: 100vw;
     margin-top: $nav-height-normal;
     padding: 0 32px;
