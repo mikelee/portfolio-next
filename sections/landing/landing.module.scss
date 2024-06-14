@@ -15,6 +15,8 @@
     margin-top: $nav-height-normal;
     padding: 0 32px;
     padding-bottom: 5vh; // to prevent .landing content from overflowing the largest part of the clip-path area
+    background-image: linear-gradient(to bottom, $color-black, $color-black-light 90%);
+    color: $color-bone;
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 90%);
     overflow: hidden !important;
 
