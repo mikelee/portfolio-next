@@ -1,9 +1,15 @@
+.landing-wrapper {
+    filter: drop-shadow(0px 8px 12px rgba(black, .5));
+}
+
 .landing {
     position: relative;
     height: calc(100vh - $nav-height-normal);
     width: 100vw;
     margin-top: $nav-height-normal;
     padding: 0 32px;
+    padding-bottom: 5vh; // to prevent .landing content from overflowing the largest part of the clip-path area
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 90%);
     overflow: hidden !important;
 
     main {
