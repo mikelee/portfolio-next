@@ -57,6 +57,13 @@
 
 @media screen and (min-width: 721px) {
     .landing {
+        .name {
+            font-size: 5rem;
+        }
+
+        .text {
+            font-size: 1.5rem;
+        }
 
         .buttons {
             flex-direction: row;
