@@ -9,7 +9,7 @@ const Landing = () => (
             <Stars />
             <main>
                 <h1 className={styles['name']}>Mike Lee</h1>
-                <p className={styles['text']}>Full Stack Developer</p>
+                <p className={styles['occupation']}>Full Stack Developer</p>
                 <Link href='/#contact' className={styles['button']}>Get In Touch</Link>
             </main>
         </div>

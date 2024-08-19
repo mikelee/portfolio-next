@@ -28,7 +28,7 @@
     }
 
     .name,
-    .text {
+    .occupation {
         z-index: 99;
     }
 
@@ -36,7 +36,7 @@
         font-size: 3rem;
     }
 
-    .text {
+    .occupation {
         color: $color-red;
     }
 
@@ -52,7 +52,7 @@
             font-size: 5rem;
         }
 
-        .text {
+        .occupation {
             font-size: 1.5rem;
         }
 
