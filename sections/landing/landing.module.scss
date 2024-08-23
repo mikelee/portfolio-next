@@ -42,7 +42,6 @@
 
     .button {
         @include button;
-        z-index: inherit;
     }
 }
 
