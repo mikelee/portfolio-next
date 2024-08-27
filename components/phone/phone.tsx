@@ -1,9 +1,11 @@
+import styles from './phone.module.scss';
+
 interface Props {
     imageURL?: string
 }
 
 const Phone: React.FC<Props> = ({ imageURL }) => (
-    <svg width="100%" viewBox="0 0 240 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={styles['phone']} width="100%" viewBox="0 0 240 490" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1.6001" width="236.8" height="490" rx="40" fill="black"/>
         {
             imageURL
