@@ -1,0 +1,67 @@
+.phone-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    .phone-container {
+        width: 270px;
+        filter: drop-shadow(8px 8px 12px rgba(black, .7));
+    }
+
+    .projects-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 32px;
+        border-bottom: 2px solid $color-sand;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .name-container {
+
+            .name {
+                text-align: center;
+            }
+        }
+
+        .try-project-button {
+            @include button;
+            width: 224px;
+        }
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .phone-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 64px 16px;
+
+        .project {
+            border: none;
+
+            .name-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: 6rem;
+            }
+
+            .try-project-button {
+                width: 250px;
+            }
+        }
+    }
+}
