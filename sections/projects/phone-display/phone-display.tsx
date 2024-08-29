@@ -19,7 +19,7 @@ const PhoneDisplay: React.FC<Props> = ({ projects }) => (
                         <h2 className={styles['name']}>{project.name}</h2>
                     </div>
                     <div className={styles['phone-container']}>
-                        <Phone imageURL={project.image} />
+                        <Phone imageURL={project.imagePortrait} />
                     </div>
                     <Link href={project.url} className={styles['try-project-button']}>Try it out!</Link>
                 </section>

@@ -23,7 +23,7 @@ const LaptopDisplay: React.FC<Props> = ({ projects }) => {
                 }
             </div>
             <div className={styles['laptop-container']}>
-                <Laptop imageURL={currentProject.image} />
+                <Laptop imageURL={currentProject.imageLandscape} />
             </div>
         </section>
     );
