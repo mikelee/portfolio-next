@@ -14,7 +14,7 @@ const projects: Project[] = [
         name: 'Gravity Simulator',
         description: 'Create planets and watch how their gravitational forces influence each other\'s orbits.',
         imageLandscape: '/gravity-simulator-landscape.webp',
-        imagePortrait: '/gravity-simulator-image.png',
+        imagePortrait: '/gravity-simulator-portrait.png',
         video: '/gravity-simulator-video.mp4',
         url: 'https://gravitysimulator.onrender.com/'
     },
@@ -23,7 +23,7 @@ const projects: Project[] = [
         name: 'Rewarded',
         description: 'A to-do list app with a twist. To-dos are linked to rewards. When all the required to-dos are completed, the reward is unlocked.',
         imageLandscape: '/rewarded-landscape.webp',
-        imagePortrait: '/rewarded-image.png',
+        imagePortrait: '/rewarded-portrait.png',
         video: '/rewarded-video.mp4',
         url: 'https://rewarded.dev/'
     },
@@ -32,7 +32,7 @@ const projects: Project[] = [
         name: 'Mind Right',
         description: 'Keep a postive mindset and stay focused on what matters. Add quotes with a background image. Simply click shuffle when you need a reminder and one of your quotes will appear.',
         imageLandscape: '/mindright-landscape.webp',
-        imagePortrait: '/mind-right-image.png',
+        imagePortrait: '/mind-right-portrait.png',
         video: '/mind-right-video.mp4',
         url: 'https://mindright.onrender.com/'
     },
