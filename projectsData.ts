@@ -38,12 +38,12 @@ const projects: Project[] = [
     },
     {
         id: 4,
-        name: 'Evolution Simulator',
-        description: 'See evolution in action, where only the fittest survive. Watch how creatures\' DNA evolves over time.',
-        imageLandscape: '',
-        imagePortrait: '',
-        video: '/evolution-simulator-video.mp4',
-        url: 'https://github.com/mikelee/evolution-simulator'
+        name: 'Luxe',
+        description: 'Luxe Car Wash is a full service car cleaning spa.',
+        imageLandscape: '/luxe-landscape.webp',
+        imagePortrait: '/luxe-portrait.webp',
+        video: '',
+        url: 'https://luxecarwash.com/'
     }
 ];
 
