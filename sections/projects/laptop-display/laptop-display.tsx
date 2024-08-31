@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 import styles from './laptop-display.module.scss';
 
@@ -18,12 +19,14 @@ const LaptopDisplay: React.FC<Props> = ({ projects }) => {
             <div className={styles['project-selector']}>
                 {
                     projects.map(project => (
-                        <div key={project.id} className={`${styles['project']} ${currentProject.id === project.id ? styles['selected'] : ''}`} onMouseEnter={() => setCurrentProject(project)}>{project.name}</div>
+                        <Link key={project.id} href={project.url} className={`${styles['project']} ${currentProject.id === project.id ? styles['selected'] : ''}`} onMouseEnter={() => setCurrentProject(project)}>{project.name}</Link>
                     ))
                 }
             </div>
             <div className={styles['laptop-container']}>
-                <Laptop imageURL={currentProject.imageLandscape} />
+                <Link href={currentProject.url}>
+                    <Laptop imageURL={currentProject.imageLandscape} />
+                </Link>
             </div>
         </section>
     );
