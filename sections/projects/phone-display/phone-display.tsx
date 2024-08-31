@@ -16,12 +16,15 @@ const PhoneDisplay: React.FC<Props> = ({ projects }) => (
             projects.map(project => (
                 <section key={project.id} className={styles['project']}>
                     <div className={styles['name-container']}>
-                        <h2 className={styles['name']}>{project.name}</h2>
+                        <h2>
+                            <Link className={styles['name']} href={project.url}>{project.name}</Link>
+                        </h2>
                     </div>
                     <div className={styles['phone-container']}>
-                        <Phone imageURL={project.imagePortrait} />
+                        <Link className={styles['name']} href={project.url}>
+                            <Phone imageURL={project.imagePortrait} />
+                        </Link>
                     </div>
-                    <Link href={project.url} className={styles['try-project-button']}>Try it out!</Link>
                 </section>
             ))
         }
