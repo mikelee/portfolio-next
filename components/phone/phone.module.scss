@@ -1,0 +1,9 @@
+.phone {
+    perspective: 1000px;
+    transform-origin: 50% 50%;
+    transition: all .3s;
+
+    &:hover {
+        transform: skewX(-4deg) rotateX(13deg) rotateY(-24deg) rotateZ(4deg);
+    }
+}
