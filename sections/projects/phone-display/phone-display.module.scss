@@ -9,13 +9,6 @@
         filter: drop-shadow(8px 8px 12px rgba(black, .7));
     }
 
-    .projects-display {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
     .project {
         display: flex;
         flex-direction: column;
@@ -35,11 +28,6 @@
                 text-align: center;
             }
         }
-
-        .try-project-button {
-            @include button;
-            width: 224px;
-        }
     }
 }
 
@@ -58,10 +46,6 @@
                 flex-direction: column;
                 justify-content: flex-end;
                 height: 6rem;
-            }
-
-            .try-project-button {
-                width: 250px;
             }
         }
     }
