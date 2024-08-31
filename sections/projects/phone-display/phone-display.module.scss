@@ -15,11 +15,6 @@
         align-items: center;
         width: 100%;
         padding: 64px 32px;
-        border-bottom: 2px solid $color-sand;
-
-        &:last-child {
-            border-bottom: none;
-        }
 
         .name-container {
 
@@ -39,8 +34,6 @@
         gap: 64px 16px;
 
         .project {
-            border: none;
-
             .name-container {
                 display: flex;
                 flex-direction: column;
