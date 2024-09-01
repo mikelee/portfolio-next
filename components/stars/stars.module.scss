@@ -6,7 +6,7 @@
 
     .shooting-star {
         opacity: 0;
-        stroke-dasharray: 220;
+        stroke-dasharray: 220 220;
         animation: shooting-star 1s forwards;
 
         &.first {
