@@ -19,7 +19,7 @@ const NetlifyForm: React.FC<Props> = ({ children, name, successMessage, errorMes
         const myForm = (e.target as HTMLFormElement);
         const formData = new FormData(myForm);
       
-        const res = await fetch('/', {
+        const res = await fetch('/_netlify-forms.html', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: new URLSearchParams(formData as any).toString()
@@ -39,7 +39,7 @@ const NetlifyForm: React.FC<Props> = ({ children, name, successMessage, errorMes
     }
     
     return (
-        <form className={styles['netlify-form']} method='POST' name={name} data-netlify='true' onSubmit={(e) => submitForm(e)}>
+        <form className={styles['netlify-form']} method='POST' name={name} onSubmit={(e) => submitForm(e)}>
             <input type='hidden' name='form-name' value={name} />
             {
                 success
