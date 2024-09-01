@@ -15,4 +15,16 @@
         z-index: -1;
         background-color: rgba(black, .15);
     }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .contact {
+        .form-container {
+            width: 60%;
+        }
+    }
 }
