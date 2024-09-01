@@ -1,6 +1,39 @@
 .contact {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 32px;
+    gap: 48px;
+    padding: 64px 32px;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: rgba(black, .15);
+    }
+
+    h1, p {
+        margin: 0;
+    }
+
+    p {
+        font-weight: 600;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .contact {
+        .form-container {
+            width: 60%;
+        }
+    }
 }
