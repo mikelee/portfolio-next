@@ -21,6 +21,10 @@
         margin: 0;
     }
 
+    h1 {
+        @include titleBlock;
+    }
+
     p {
         font-weight: 600;
     }
