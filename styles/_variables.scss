@@ -12,7 +12,26 @@ $color-white: #FFFFFF;
 $nav-height-normal: 100px;
 $nav-height-minimized: 50px;
 
+
 // Mixins
+
+$blockWidth: 12px;
+$blockGap: 8px;
+@mixin titleBlock {
+    position: relative;
+
+    // the actual title block
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(0px - $blockWidth - $blockGap);
+        height: 100%;
+        width: $blockWidth;
+        background-color: $color-red;
+    }
+}
+
 @mixin button {
     width: 100%;
     background-color: $color-red;
