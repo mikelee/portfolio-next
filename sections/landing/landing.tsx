@@ -6,7 +6,9 @@ import Stars from '../../components/stars/stars';
 const Landing = () => (
     <div className={styles['landing-wrapper']}>
         <div className={styles['landing']}>
-            <Stars />
+            <div className={styles['svg-container']}>
+                <Stars />
+            </div>
             <main>
                 <h1 className={styles['name']}>Mike Lee</h1>
                 <p className={styles['occupation']}>Full Stack Developer</p>

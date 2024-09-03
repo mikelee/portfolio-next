@@ -1,24 +1,30 @@
 .landing-wrapper {
+    height: 95vh;
+    width: 100vw;
     filter: drop-shadow(0px 8px 12px rgba(black, .5));
 }
 
 .landing {
     position: relative;
-    top: -$nav-height-normal;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-    width: 100vw;
-    margin-top: $nav-height-normal;
+    height: 100%;
+    width: 100%;
     padding: 0 32px;
     padding-bottom: 5vh; // to prevent .landing content from overflowing the largest part of the clip-path area
     background-image: linear-gradient(to bottom, $color-black $nav-height-normal, $color-black-light 90%);
     color: $color-sand;
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 90%);
     overflow: hidden !important;
+
+    .svg-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
 
     main {
         display: flex;
@@ -47,6 +53,10 @@
 
 @media screen and (min-width: 721px) {
     .landing {
+        .svg-container {
+            margin-top: $nav-height-normal;
+        }
+
         .name {
             font-size: 5rem;
         }
