@@ -14,6 +14,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>Mike Lee | Full Stack Developer</title>
                 <meta name='description' content='Mike Lee is a Full Stack Web Developer.' />
+                <meta name='viewport' content='width=device-width, initial-scale=1.0, interactive-widget=resizes-content' />
             </Head>
             <div className={styles['home']}>
                 <Landing />
