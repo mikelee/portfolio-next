@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 96px;
     width: 100%;
     
     .phone-container {
@@ -14,7 +15,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 64px 32px;
 
         .name-container {
 
