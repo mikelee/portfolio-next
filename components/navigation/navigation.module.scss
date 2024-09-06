@@ -88,31 +88,6 @@ $transition-speed: .6s;
                 color: $color-red;
             }
         }
-
-        .mountains-nav {
-            position: absolute;
-            bottom: -5%;
-            left: 0;
-
-            .back,
-            .middle,
-            .front {
-                animation-duration: 1.2s;
-                animation-timing-function: ease-out;
-            }
-
-            .back {
-                animation-name: slide-down-back;
-            }
-            
-            .middle {
-                animation-name: slide-down-middle;
-            }
-            
-            .front {
-                animation-name: slide-down-front;
-            }
-        }
     }
 }
 
@@ -158,10 +133,6 @@ $transition-speed: .6s;
                 &:hover {
                     transform: translateY(-3px);
                 }
-            }
-
-            .mountains-nav {
-                display: none;
             }
         }
     }
