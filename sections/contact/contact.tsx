@@ -26,7 +26,7 @@ const Contact = () => (
                     Message
                     <textarea name='message' rows={12} placeholder="What's on your mind..." required />
                 </label>
-                <button type='submit'>Submit</button>
+                <button type='submit'>Send</button>
             </NetlifyForm>
         </div>
     </div>
