@@ -1,0 +1,40 @@
+.privacyPolicy {
+    min-height: calc(100vh - 80px);
+    padding: 128px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: rgba(black, .15);
+    }
+
+    h1, p {
+        margin: 0;
+    }
+
+    h1 {
+        @include titleBlock;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .privacyPolicy {
+        padding: 128px;
+        padding-top: calc(128px + $nav-height-normal);
+    }
+}
