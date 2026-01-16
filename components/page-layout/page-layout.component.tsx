@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import styles from './page-layout.module.scss';
 
 import Navigation from '../navigation/navigation.component';
+import Footer from '../footer/footer';
 
 interface Props {
     children: React.ReactNode
@@ -28,6 +29,7 @@ const PageLayout: React.FC<Props> = ({ children }) => {
         <div className={styles['pageLayout']}>
             <Navigation navVisible={navVisible} pathName={pathName} setNavVisible={setNavVisible} />
             {children}
+            <Footer />
         </div>
     );
 }
