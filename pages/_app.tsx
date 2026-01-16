@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 
 import '../styles/globals.scss';
 
-import PageLayout from '../components/page-layout.component';
+import PageLayout from '../components/page-layout/page-layout.component';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
